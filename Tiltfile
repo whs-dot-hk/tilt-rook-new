@@ -1,4 +1,4 @@
-allow_k8s_contexts('kubernetes-admin@cluster.local')
+allow_k8s_contexts("kubernetes-admin@cluster.local")
 analytics_settings(enable = False)
 
 def create_namespace(name):
