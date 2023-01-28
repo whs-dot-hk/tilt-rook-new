@@ -1,0 +1,19 @@
+configOverride: |
+  [global]
+  bluefs_buffered_io = false
+
+cephClusterSpec:
+  storage:
+    useAllNodes: false
+    useAllDevices: false
+
+    nodes:
+      - name: k8s-1
+        devices:
+          - name: /dev/vg1/lv1
+      - name: k8s-2
+        devices:
+          - name: /dev/vg1/lv1
+      - name: k8s-3
+        devices:
+          - name: /dev/vg1/lv1
